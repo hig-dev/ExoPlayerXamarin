@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Additions\LibflacAudioRenderer.cs" />
     <None Remove="Jars\extension-flac-2.11.1.aar" />
   </ItemGroup>
   
