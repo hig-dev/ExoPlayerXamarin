@@ -25,36 +25,6 @@ steps:
     solution: 'ExoPlayer_slim.sln'
     configuration: 'Release'
 
-- task: NuGetCommand@2
-  inputs:
-    command: 'pack'
-    packagesToPack: 'ExoPlayer.Core/ExoPlayer.Core.csproj'
-    configuration: 'Release'
-    versioningScheme: 'byPrereleaseNumber'
-    majorVersion: '2'
-    minorVersion: '11'
-    patchVersion: '1'
-
-- task: NuGetCommand@2
-  inputs:
-    command: 'pack'
-    packagesToPack: 'ExoPlayer/ExoPlayer.csproj'
-    configuration: 'Release'
-    versioningScheme: 'byPrereleaseNumber'
-    majorVersion: '2'
-    minorVersion: '11'
-    patchVersion: '1'
-
-- task: NuGetCommand@2
-  inputs:
-    command: 'pack'
-    packagesToPack: 'ExoPlayer.Ext.Flac/ExoPlayer.Ext.Flac.csproj'
-    configuration: 'Release'
-    versioningScheme: 'byPrereleaseNumber'
-    majorVersion: '2'
-    minorVersion: '11'
-    patchVersion: '1'
-
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
