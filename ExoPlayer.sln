@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExoPlayer", "ExoPlayer\ExoPlayer.csproj", "{0B871C50-6D5D-45D0-B32D-84E25ADB869A}"
 EndProject
@@ -55,6 +55,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExoPlayer.CastDemo", "Samples\Cast\ExoPlayer.CastDemo.csproj", "{66BC5F95-F24A-4E43-BBF8-318DEAFD6992}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExoPlayer.Ext.Cronet", "ExoPlayer.Ext.Cronet\ExoPlayer.Ext.Cronet.csproj", "{8B6AC957-0250-4585-B7B0-C6D81BAC777F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExoPlayer.Ext.Flac", "ExoPlayer.Ext.Flac\ExoPlayer.Ext.Flac.csproj", "{4BF39240-7257-4D88-9E30-54F0749E956F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -130,6 +132,10 @@ Global
 		{8B6AC957-0250-4585-B7B0-C6D81BAC777F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B6AC957-0250-4585-B7B0-C6D81BAC777F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B6AC957-0250-4585-B7B0-C6D81BAC777F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF39240-7257-4D88-9E30-54F0749E956F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF39240-7257-4D88-9E30-54F0749E956F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF39240-7257-4D88-9E30-54F0749E956F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF39240-7257-4D88-9E30-54F0749E956F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{05CAE29B-694A-4AA9-AC07-F6F2F6B1C857} = {4EF4950F-D0EE-4F8A-90E6-5F7F0B51EC78}
 		{66BC5F95-F24A-4E43-BBF8-318DEAFD6992} = {4EF4950F-D0EE-4F8A-90E6-5F7F0B51EC78}
 		{8B6AC957-0250-4585-B7B0-C6D81BAC777F} = {B29C2433-CA76-4C51-8427-FA45A3E32FA6}
+		{4BF39240-7257-4D88-9E30-54F0749E956F} = {B29C2433-CA76-4C51-8427-FA45A3E32FA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93536401-D015-479E-B4AC-9BF8F73D507E}
