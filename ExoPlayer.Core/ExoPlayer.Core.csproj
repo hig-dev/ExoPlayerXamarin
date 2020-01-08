@@ -15,12 +15,10 @@
 	  <TransformFile Include="Transforms\*.xml" />
 	  <Compile Include="Additions\*.cs" />
     <None Include="..\readme.txt" pack="true" PackagePath="." />
-    <JavaSourceJar Include="JavaDocs\*.jar" />
   </ItemGroup>
   
   <ItemGroup>
     <None Remove="Jars\exoplayer-core-2.11.1.aar" />
-    <None Remove="JavaDocs\exoplayer-core-2.11.1-sources.jar" />
   </ItemGroup>
   
   <ItemGroup>

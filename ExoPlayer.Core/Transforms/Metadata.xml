@@ -189,4 +189,45 @@
 
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/interface[@name='TrackSelection']/method[@name='updateSelectedTrack' and count(parameter)=3 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='long']]" />
   <remove-node path="/api/package[@name='com.google.android.exoplayer2']/interface[@name='Renderer']/method[@name='setOperatingRate' and count(parameter)=1 and parameter[1][@type='float']]" />
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2']/interface[@name='Player.EventListener']/method[@name='onTimelineChanged' and count(parameter)=3 and parameter[1][@type='com.google.android.exoplayer2.Timeline'] and parameter[2][@type='java.lang.Object'] and parameter[3][@type='int']]" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.flac']/class[@name='VorbisComment']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='ApicFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='BinaryFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='ChapterFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='ChapterTocFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaPeriod']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='CommentFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource.Factory']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='FileDataSource.Factory']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='FileDataSourceFactory']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/class[@name='FixedTrackSelection']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='GeobFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.icy']/class[@name='IcyHeaders']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.icy']/class[@name='IcyInfo']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='InternalFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='LoopingMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='MaskingMediaPeriod']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='MaskingMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.extractor.mp4']/class[@name='MdtaMetadataEntry']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='MlltFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.flac']/class[@name='PictureFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.scte35']/class[@name='PrivateCommand']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='PrivFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ProgressiveMediaSource.Factory']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/class[@name='AdaptiveTrackSelection']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.ads']/class[@name='AdsMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='MergingMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/class[@name='RandomTrackSelection']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='ResolvingDataSource.Factory']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='SilenceMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.scte35']/class[@name='SpliceInsertCommand']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.scte35']/class[@name='SpliceNullCommand']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.scte35']/class[@name='SpliceScheduleCommand']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='TextInformationFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.scte35']/class[@name='TimeSignalCommand']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='UrlLinkFrame']" />
 </metadata>
