@@ -17,6 +17,11 @@
     <None Include="..\readme.txt" pack="true" PackagePath="." />
     <JavaSourceJar Include="JavaDocs\*.jar" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Jars\exoplayer-2.11.1.aar" />
+    <None Remove="JavaDocs\exoplayer-2.11.1-sources.jar" />
+  </ItemGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\ExoPlayer.Core\ExoPlayer.Core.csproj" />
