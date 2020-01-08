@@ -42,4 +42,7 @@
 
   <attr path="//interface/method[@abstract='false']" name="abstract">true</attr>
 
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.dash']/class[@name='DashMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.dash.offline']/class[@name='DashDownloader']" />
+
 </metadata>

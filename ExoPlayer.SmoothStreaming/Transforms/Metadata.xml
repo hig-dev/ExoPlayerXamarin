@@ -45,5 +45,7 @@
   <attr name="visibility" path="/api/package[@name='com.google.android.exoplayer2.source.smoothstreaming']/class[@name='SsMediaSource']/method[@name='prepareSourceInternal' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.TransferListener']]">protected</attr>
 
   <attr path="//interface/method[@abstract='false']" name="abstract">true</attr>
-
+    
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.smoothstreaming']/class[@name='SsMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.smoothstreaming.offline']/class[@name='SsDownloader']" />
 </metadata>
