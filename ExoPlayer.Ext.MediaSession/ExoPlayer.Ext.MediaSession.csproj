@@ -17,6 +17,11 @@
     <None Include="..\readme.txt" pack="true" PackagePath="." />
     <JavaSourceJar Include="JavaDocs\*.jar" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Jars\extension-mediasession-2.11.1.aar" />
+    <None Remove="JavaDocs\extension-mediasession-2.11.1-sources.jar" />
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Media.Compat" Version="28.0.0.3" />

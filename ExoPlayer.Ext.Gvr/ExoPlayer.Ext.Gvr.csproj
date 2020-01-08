@@ -19,6 +19,11 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Remove="Jars\extension-gvr-2.11.1.aar" />
+    <None Remove="JavaDocs\extension-gvr-2.11.1-sources.jar" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <PackageReference Include="Com.Google.VR.Sdk.Base" Version="1.190.0" />
   </ItemGroup>
   

@@ -17,6 +17,11 @@
     <None Include="..\readme.txt" pack="true" PackagePath="." />
     <JavaSourceJar Include="JavaDocs\*.jar" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Jars\extension-ima-2.11.1.aar" />
+    <None Remove="JavaDocs\extension-ima-2.11.1-sources.jar" />
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Xam.Plugins.Android.Interactivemedia.Ads" Version="3.10.9" />
