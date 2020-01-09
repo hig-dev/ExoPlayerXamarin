@@ -7,7 +7,7 @@
     <PackageId>Xam.Plugins.Android.ExoPlayer.Hls</PackageId>
     <IsBindingProject>true</IsBindingProject>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <Version>2.11.2</Version>
+    <Version>2.11.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
