@@ -15,8 +15,10 @@
     <attr name="return" path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultDataSourceFactory']/method[@name='createDataSource' and count(parameter)=0]">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
     <attr name="return" path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='HttpDataSource.BaseFactory']/method[@name='createDataSource' and count(parameter)=0]">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
     <attr name="return" path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='HttpDataSource.Factory']/method[@name='createDataSource' and count(parameter)=0]">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
+    <attr name="return" path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='FileDataSource.Factory']/method[@name='createDataSource' and count(parameter)=0]">Com.Google.Android.Exoplayer2.Upstream.IDataSource</attr>
+    <attr name="return" path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ProgressiveMediaSource.Factory']/method[@name='createMediaSource' and count(parameter)=1 and parameter[1][@type='android.net.Uri']]">Com.Google.Android.Exoplayer2.Source.IMediaSource</attr>
 
-    <!-- Public classes inheriting private classes or returning private classes in method parameters (permitted in java) -->
+  <!-- Public classes inheriting private classes or returning private classes in method parameters (permitted in java) -->
     <attr path="/api/package[@name='com.google.android.exoplayer2.text.cea']/class[@name='CeaDecoder']" name="visibility">public</attr>
     <attr path="/api/package[@name='com.google.android.exoplayer2.text.ttml']/class[@name='TtmlSubtitle']" name="visibility">public</attr>
     <attr path="/api/package[@name='com.google.android.exoplayer2.text.webvtt']/class[@name='Mp4WebvttSubtitle']" name="visibility">public</attr>
@@ -186,7 +188,7 @@
 
   <!--<attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='BaseDataSource']/method[@name='getResponseHeaders' and count(parameter)=0]" name="abstract">false</attr>-->
   <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='DataSource']/method[@name='getResponseHeaders' and count(parameter)=0]" name="abstract">false</attr>
-
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/interface[@name='MediaSourceFactory']/method[@name='setStreamKeys' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.google.android.exoplayer2.offline.StreamKey&gt;']]" name="abstract">false</attr>
   <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/interface[@name='TrackSelection']/method[@name='updateSelectedTrack' and count(parameter)=3 and parameter[1][@type='long'] and parameter[2][@type='long'] and parameter[3][@type='long']]" />
   <remove-node path="/api/package[@name='com.google.android.exoplayer2']/interface[@name='Renderer']/method[@name='setOperatingRate' and count(parameter)=1 and parameter[1][@type='float']]" />
 
@@ -200,9 +202,6 @@
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ClippingMediaSource']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='CommentFrame']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ConcatenatingMediaSource']" />
-    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource']" />
-    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource.Factory']" />
-    <remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='FileDataSource.Factory']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='FileDataSourceFactory']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/class[@name='FixedTrackSelection']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='GeobFrame']" />
@@ -217,7 +216,6 @@
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.flac']/class[@name='PictureFrame']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.scte35']/class[@name='PrivateCommand']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='PrivFrame']" />
-    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ProgressiveMediaSource.Factory']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/class[@name='AdaptiveTrackSelection']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.ads']/class[@name='AdsMediaSource']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='MergingMediaSource']" />
@@ -230,4 +228,6 @@
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='TextInformationFrame']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.scte35']/class[@name='TimeSignalCommand']" />
     <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='UrlLinkFrame']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/class[@name='ExtractorMediaSource.Factory']" />
 </metadata>
