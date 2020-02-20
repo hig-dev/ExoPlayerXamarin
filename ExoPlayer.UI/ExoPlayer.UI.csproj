@@ -31,4 +31,9 @@
   <ItemGroup>
     <ProjectReference Include="..\ExoPlayer.Core\ExoPlayer.Core.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.0.0" />
+    <PackageReference Update="Xamarin.Build.Download" Version="0.8.0" />
+  </ItemGroup>
 </Project>

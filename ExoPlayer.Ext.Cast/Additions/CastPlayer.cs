@@ -108,5 +108,15 @@ namespace Com.Google.Android.Exoplayer2.Ext.Cast
                 }
             }
         }
+
+        public override unsafe IPlayerTextComponent TextComponent
+        {
+            // Metadata.xml XPath method reference: path="/api/package[@name='com.google.android.exoplayer2']/class[@name='BasePlayer']/method[@name='getTextComponent' and count(parameter)=0]"
+            [Register("getTextComponent", "()Lcom/google/android/exoplayer2/Player$TextComponent;", "GetGetTextComponentHandler")]
+            get
+            {
+                return null;
+            }
+        }
     }
 }
